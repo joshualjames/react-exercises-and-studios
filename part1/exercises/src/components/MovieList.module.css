@@ -6,4 +6,6 @@
 
 .movieHeading {
    text-align: left;
+   border-style:ridge;
+   border-width: 12px;
 }
