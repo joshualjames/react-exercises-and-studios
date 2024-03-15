@@ -2,8 +2,9 @@ import SaveButton from "./SaveButton";
 import ClickedButton from "./ClickedButton";
 
 function Button(props) {
-  const saveButton = props.saveButton;
-  return saveButton ? <SaveButton/> : <ClickedButton/>;
+  let saveButton = props;
+  saveButton = false;
+  return saveButton ? <SaveButton saved={false} /> : <ClickedButton saved={true} />;
  }
  
  export default Button;
@@ -11,4 +12,3 @@ function Button(props) {
  //need to import SaveButton and ClickedButton
  //create conditional for these buttons
  //import styling
- 

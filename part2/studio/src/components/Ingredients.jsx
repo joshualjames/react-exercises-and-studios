@@ -2,13 +2,17 @@ import recipeData from "./recipe.json";
 
 function IngredientList() {
 
-  const listItems = recipeData[0].ingredients
+  const listItems = recipeData.map(recipe =>
+    recipe.ingredients.map((ingredient) =>
+      <li key={ingredient}>{ingredient}</li>
+  ))
 
   return (
     <div>
-      <h3>Ingredients</h3>{listItems.map((ingredient)=>
-      <li id={ingredient}>{ingredient}</li>
-      )}
+      <h3>Ingredients</h3>
+        <ul>{
+        listItems}
+        </ul>
      </div>
    )
  }

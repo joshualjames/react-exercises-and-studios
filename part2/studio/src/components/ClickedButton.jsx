@@ -1,8 +1,12 @@
 import "./styling.css";
+import Button from "./Button"
 
-function ClickedButton() {
+function ClickedButton(props) {
   function handleClick() {
     alert("You are removing this pin!");
+    let saved = props;
+    console.log(saved);
+    Button(saved);
   }
   return (
     <button id="clickedButton" onClick={handleClick}>
