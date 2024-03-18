@@ -23,9 +23,9 @@ export default function MyProjects() {
       <button onClick={handleClick}>
         Next
       </button>
-      <h2>{project.canvas} by {project.designer}
+      <h2>{project.category} : {project.caption}
       </h2>
-      <img src={project.photoUrl} alt={project.alt} />
+      <img src={project.imgURL} alt={project.alt} style={{ height: '500px' }} />
     </div>
   );
 }
