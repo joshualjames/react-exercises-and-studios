@@ -4,9 +4,7 @@ import Button from "./Button"
 function ClickedButton(props) {
   function handleClick() {
     alert("You are removing this pin!");
-    let saved = props;
-    console.log(saved);
-    Button(saved);
+    props.handleClick(false);
   }
   return (
     <button id="clickedButton" onClick={handleClick}>

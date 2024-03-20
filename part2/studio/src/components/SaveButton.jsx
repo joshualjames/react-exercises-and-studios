@@ -4,9 +4,7 @@ import Button from "./Button"
 function SaveButton(props) {
   function handleClick() {
     alert("You are saving this pin!");
-    let saved = props;
-    console.log(saved);
-    Button(saved);
+    props.handleClick(true);
   }
   return (
     <button id="saveButton" onClick={handleClick}>

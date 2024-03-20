@@ -1,10 +1,10 @@
 import SaveButton from "./SaveButton";
 import ClickedButton from "./ClickedButton";
+import { useState } from "react";
 
-function Button(props) {
-  let saveButton = props;
-  saveButton = false;
-  return saveButton ? <SaveButton saved={false} /> : <ClickedButton saved={true} />;
+function Button() {
+  const [isSaved, setIsSaved] = useState(false);
+  return isSaved ? <ClickedButton handleClick={setIsSaved} /> : <SaveButton handleClick={setIsSaved} />;
  }
  
  export default Button;
