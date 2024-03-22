@@ -26,9 +26,7 @@ export default function StatusChange() {
 
          <p>Preview: {notes}</p>
 
-         {recipeStatus && <p>Notes: {journal}</p>}
-
-         {!recipeStatus &&< p > I have not tried this recipe!</p>}
+         {recipeStatus ? <p>Notes: {journal}</p> : <p> I have not tried this recipe!</p>}
       </div>
    );
 }

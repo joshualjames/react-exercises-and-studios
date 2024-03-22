@@ -2,7 +2,7 @@ import { useState } from 'react';
 import "../App.css"
 
 export default function BoardAssignment () {
-   const boards = [{ "label": "Desserts", "value": "Desserts" }, { "label": "Appetizers", "value": "Appetizers" },
+   const boards = [{"label":"select", "value": "No boards yet!"},{ "label": "Desserts", "value": "Desserts" }, { "label": "Appetizers", "value": "Appetizers" },
       { "label": "Cocktails", "value": "Cocktails" }];
    const [boardName, setName] = useState("No boards yet!");
  
